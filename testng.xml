@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Tests Suite">
+    <test name="All Tests">
+        <classes>
+            <!-- List all your test classes here -->
+            <class name="com.spotify.tests.PlaylistTest"/>
+
+            <!-- Add more classes as needed -->
+        </classes>
+    </test>
+</suite>

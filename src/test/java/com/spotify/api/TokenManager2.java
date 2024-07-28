@@ -10,7 +10,7 @@ public class TokenManager2 {
     private static String access_token;
     private static Instant expiry_time;
 
-    public static String getToken() {
+    public synchronized static String getToken() {
         try {
             if (access_token == null || Instant.now().isAfter(expiry_time)) {
                 System.out.println("Renewing Token ....");

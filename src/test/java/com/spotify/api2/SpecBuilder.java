@@ -11,7 +11,8 @@ public class SpecBuilder {
 
     public static RequestSpecification getRequestSpec() {
         return new RequestSpecBuilder()
-                .setBaseUri("https://api.spotify.com")
+                .setBaseUri(System.getProperty("BASE_URI"))
+                //.setBaseUri("https://api.spotify.com")
                 .setBasePath("/v1")
                 .setContentType(ContentType.JSON)
                 .log(LogDetail.ALL)
@@ -20,7 +21,8 @@ public class SpecBuilder {
 
     public static RequestSpecification getAccountRequestSpec() {
         return new RequestSpecBuilder()
-                .setBaseUri("https://accounts.spotify.com")
+                //.setBaseUri("https://accounts.spotify.com")
+                .setBaseUri(System.getProperty("ACCOUNT_BASE_URI"))
                 .setContentType(ContentType.URLENC)
                 .log(LogDetail.ALL)
                 .build();
