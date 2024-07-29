@@ -51,7 +51,7 @@ jobs:
       with:
         publish_dir: ./allure-report
       env:
-        PERSONAL_TOKEN: ${{ secrets.GH_PAT }}
+        ACTIONS_DEPLOY_KEY: ${{ secrets.GH_PAT }}
 
     - name: Upload Allure Report as an artifact
       uses: actions/upload-artifact@v2
