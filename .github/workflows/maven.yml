@@ -34,7 +34,7 @@ jobs:
       run: mvn clean install
 
     - name: Run TestNG Tests
-      run: mvn test -DBASE_URI="https://api.spotify.com" -DACCOUNT_BASE_URI="https://accounts.spotify.com"
+      run: mvn test BASE_URI="https://api.spotify.com" ACCOUNT_BASE_URI="https://accounts.spotify.com"
 
     - name: Download Allure
       run: |
