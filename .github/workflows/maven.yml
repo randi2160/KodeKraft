@@ -35,3 +35,25 @@ jobs:
 
     - name: Run TestNG Tests
       run: mvn test -DBASE_URI="https://api.spotify.com" -DACCOUNT_BASE_URI="https://accounts.spotify.com"
+
+    - name: Download Allure
+      run: |
+        curl -o allure-2.13.8.tgz -L "https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz"
+        tar -zxvf allure-2.13.8.tgz
+        sudo mv allure-2.13.8 /opt/allure
+        sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+
+    - name: Generate Allure Report
+      run: allure generate target/allure-results --clean -o allure-report
+
+    - name: Upload Allure Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./allure-report
+
+    - name: Upload Allure Report as an artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: allure-report
+        path: allure-report
