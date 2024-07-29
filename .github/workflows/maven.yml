@@ -50,15 +50,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         publish_dir: ./allure-report
-        publish_branch: gh-pages
-        allow_empty_commit: false
-        keep_files: false
-        force_orphan: false
-        enable_jekyll: false
-        disable_nojekyll: false
-        exclude_assets: .github
       env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.GH_PAT }}
+        PERSONAL_TOKEN: ${{ secrets.GH_PAT }}
 
     - name: Upload Allure Report as an artifact
       uses: actions/upload-artifact@v2
