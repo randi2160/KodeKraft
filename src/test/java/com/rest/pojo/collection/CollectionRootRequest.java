@@ -1,24 +1,24 @@
 package com.rest.pojo.collection;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-/*
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class CollectionRootRequest extends com.rest.pojo.collection.CollectionRootBase {
-    com.rest.pojo.collection.CollectionRequest collection;
 
-    public CollectionRootRequest(){
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class CollectionRootRequest extends CollectionRootBase {
+    private CollectionRequest collection;
+
+    public CollectionRootRequest() {
+        // Default constructor
     }
 
-    public CollectionRootRequest(com.rest.pojo.collection.CollectionRequest collection){
+    public CollectionRootRequest(CollectionRequest collection) {
         this.collection = collection;
     }
 
-    public com.rest.pojo.collection.CollectionRequest getCollection() {
+    public CollectionRequest getCollection() {
         return collection;
     }
 
-    public void setCollection(com.rest.pojo.collection.CollectionRequest collection) {
+    public void setCollection(CollectionRequest collection) {
         this.collection = collection;
     }
 }
-*/
