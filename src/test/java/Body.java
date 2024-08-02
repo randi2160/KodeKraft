@@ -1,3 +1,4 @@
+/*
 package com.rest.pojo.collection;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -31,3 +32,4 @@ public class Body {
         this.raw = raw;
     }
 }
+*/
