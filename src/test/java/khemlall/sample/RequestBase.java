@@ -1,8 +1,6 @@
-package com.rest.pojo.collection;
+package khemlall.sample;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.rest.pojo.collection.Body;
-import com.rest.pojo.collection.Header;
 
 import java.util.List;
 
@@ -10,14 +8,14 @@ import java.util.List;
 public abstract class RequestBase {
     private String method;
     List<Header> header;
-    Body body;
+    Body1 body;
     private String description;
 
     public RequestBase(){
 
     }
 
-    public RequestBase(String method, List<Header> header, Body body, String description) {
+    public RequestBase(String method, List<Header> header, Body1 body, String description) {
         this.method = method;
         this.header = header;
         this.body = body;
@@ -40,11 +38,11 @@ public abstract class RequestBase {
         this.header = header;
     }
 
-    public Body getBody() {
+    public Body1 getBody() {
         return body;
     }
 
-    public void setBody(Body body) {
+    public void setBody(Body1 body) {
         this.body = body;
     }
 

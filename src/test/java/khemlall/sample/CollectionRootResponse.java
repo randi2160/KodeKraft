@@ -1,7 +1,8 @@
-package com.rest.pojo.collection;
+package khemlall.sample;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/*
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CollectionRootResponse extends CollectionRootBase{
     CollectionResponse collection;
@@ -21,3 +22,4 @@ public class CollectionRootResponse extends CollectionRootBase{
         this.collection = collection;
     }
 }
+*/

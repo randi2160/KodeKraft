@@ -1,9 +1,10 @@
-package com.rest.pojo.collection;
+package khemlall.sample;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.rest.pojo.collection.RequestRootResponse;
 
 import java.util.List;
-
+/*
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class FolderResponse extends FolderBase{
     List<RequestRootResponse> item;
@@ -25,3 +26,4 @@ public class FolderResponse extends FolderBase{
         this.item = item;
     }
 }
+*/

@@ -1,16 +1,16 @@
-package com.rest.pojo.collection;
+package khemlall.sample;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Body {
+public class Body1 {
     private String mode;
     private String raw;
 
-    public Body(){
+    public Body1(){
     }
 
-    public Body(String mode, String raw){
+    public Body1(String mode, String raw){
         this.mode = mode;
         this.raw = raw;
     }

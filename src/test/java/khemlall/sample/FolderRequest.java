@@ -1,6 +1,7 @@
-package com.rest.pojo.collection;
-
+package khemlall.sample;
+/*
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.rest.pojo.collection.RequestRootRequest;
 
 import java.util.List;
 
@@ -25,3 +26,4 @@ public class FolderRequest extends FolderBase{
         this.item = item;
     }
 }
+*/

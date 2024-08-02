@@ -1,5 +1,4 @@
-package com.rest.pojo.collection;
-
+package khemlall.sample;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)

@@ -1,18 +1,19 @@
-package com.rest.pojo.collection;
-
+package khemlall.sample;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.rest.pojo.collection.URL;
+import khemlall.sample.RequestBase;
 
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class RequestResponse extends RequestBase{
+public class RequestResponse extends RequestBase {
     URL url;
 
     public RequestResponse(){
 
     }
 
-    public RequestResponse(URL url, String method, List<Header> header, Body body, String description) {
+    public RequestResponse(URL url, String method, List<Header> header, Body1 body, String description) {
         super(method, header, body, description);
         this.url = url;
     }

@@ -1,9 +1,10 @@
-package com.rest.pojo.collection;
+package khemlall.sample;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.rest.pojo.collection.RequestRootBase;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class RequestRootRequest extends RequestRootBase{
+public class RequestRootRequest extends RequestRootBase {
     RequestRequest request;
 
     public RequestRootRequest(){

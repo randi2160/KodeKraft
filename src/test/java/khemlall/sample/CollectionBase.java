@@ -1,6 +1,7 @@
-package com.rest.pojo.collection;
+package khemlall.sample;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.rest.pojo.collection.Info;
 
 import java.util.List;
 

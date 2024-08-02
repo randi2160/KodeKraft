@@ -3,7 +3,7 @@ package com.rest.pojo.collection;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
-
+/*
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CollectionRequest extends com.rest.pojo.collection.CollectionBase {
     List<com.rest.pojo.collection.FolderRequest> item;
@@ -24,4 +24,4 @@ public class CollectionRequest extends com.rest.pojo.collection.CollectionBase {
     public void setItem(List<com.rest.pojo.collection.FolderRequest> item) {
         this.item = item;
     }
-}
+}*/
